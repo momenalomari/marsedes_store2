@@ -36,7 +36,7 @@
 
 }
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
 
@@ -68,4 +68,64 @@
 .custom-alert p {
   color: #198754;
   font-size: 1.2rem;
+}
+
+/* الصور جوا الكروت */
+.car-card img {
+  object-fit: cover;
+  height: 220px;
+  width: 100%;
+}
+
+
+
+/* الهيدر يكون أصغر بالموبايل */
+@media (min-width:400px)and (max-width: 800px) {
+  
+  .navbar-brand img {
+    width: 70px;
+  }
+ 
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 500px; 
+}
+
+/* للأجهزة التابلت */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 350px;
+  }
+}
+
+/* للموبايل */
+@media (max-width: 576px) {
+  .carousel-item img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 576px) {
+  .car-card img {
+    height: 180px;
+  }
+  .section-title {
+    font-size: 1.5rem;
+  }
+  .card-body h5 {
+    font-size: 1.1rem;
+  }
+  .card-body .price {
+    font-size: 0.9rem;
+  }
+}
+
+/* البوتون بالموبايل */
+@media (max-width: 400px) {
+  .btn-lg {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
 }
